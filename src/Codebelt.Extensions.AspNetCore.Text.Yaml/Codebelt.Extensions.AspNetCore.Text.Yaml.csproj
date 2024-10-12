@@ -1,22 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
-    <ProjectGuid>a3abfcd1-d4a6-4fa5-bb5a-758ac340a527</ProjectGuid>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+		<ProjectGuid>a3abfcd1-d4a6-4fa5-bb5a-758ac340a527</ProjectGuid>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <Description>The Codebelt.Extensions.AspNetCore.Text.Yaml namespace contains types and extension methods that complements the Cuemon.Extensions.AspNetCore namespace while being an addition to the Microsoft.AspNetCore namespace. Extends upon YAML formatters and converters in the context of ASP.NET Core for YamlDotNet.</Description>
-    <PackageTags>extension-methods extensions yaml-converters asp-net-core asp-net aspnet di depedency-injection yaml yamldotnet</PackageTags>
-  </PropertyGroup>
+	<PropertyGroup>
+		<Description>The Codebelt.Extensions.AspNetCore.Text.Yaml namespace contains types and extension methods that complements the Cuemon.Extensions.AspNetCore namespace while being an addition to the Microsoft.AspNetCore namespace. Extends upon YAML formatters and converters in the context of ASP.NET Core for YamlDotNet.</Description>
+		<PackageTags>extension-methods extensions yaml-converters asp-net-core asp-net aspnet di depedency-injection yaml yamldotnet</PackageTags>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Cuemon.AspNetCore" Version="9.0.0-preview.11" />
-    <PackageReference Include="Cuemon.Extensions.DependencyInjection" Version="9.0.0-preview.11" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Cuemon.AspNetCore" Version="9.0.0-preview.11" />
+		<PackageReference Include="Cuemon.Extensions.DependencyInjection" Version="9.0.0-preview.11" />
+		<PackageReference Include="Cuemon.Extensions.Threading" Version="9.0.0-preview.11" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Codebelt.Extensions.YamlDotNet\Codebelt.Extensions.YamlDotNet.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Codebelt.Extensions.YamlDotNet\Codebelt.Extensions.YamlDotNet.csproj" />
+	</ItemGroup>
 
 </Project>

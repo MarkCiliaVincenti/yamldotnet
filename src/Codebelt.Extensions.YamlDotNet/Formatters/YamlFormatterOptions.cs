@@ -16,7 +16,7 @@ namespace Codebelt.Extensions.YamlDotNet.Formatters
     /// </summary>
     public class YamlFormatterOptions : EncodingOptions, IExceptionDescriptorOptions, IContentNegotiation, IValidatableParameterObject
     {
-        private readonly object _locker = new();
+        private readonly Lock _locker = LockFactory.Create();
         private bool _refreshed;
 
         /// <summary>
